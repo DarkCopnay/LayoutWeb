@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #272525;
+    /* background-color: orangered; */
+    font-family: 'Poppins', sans-serif;
+}
+
+.texth2 {
+    text-align: center;
+    margin-top: 150px;
+    font-size: 40px;
+    color: green;
+}
+
+.texth3 {
+    text-align: center;
+    font-size: 20px;
+    color: darkblue;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+.error1, .error2, .error3, .error4 {
+    color: red;
+    font-size: 17px;
+    text-align: center;
+}
+
+/*Info Block*/
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 52px;
+  border-bottom: 1px solid white;
+}
+
+.info a {
+  padding: 0 15px;
+  color: white;
+  text-decoration: none;
+}
+/*Info endblock*/
+
+/*Nav block*/
+#topnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 82px;
+    color: white;
+    transition: 0.5s;
+}
+
+.headscroll {
+     top: 0;
+     z-index: 100;
+     background-color: #19dcea7e;
+     transition: 0.5s;
+     position: sticky;
+}
+
+.nav a {
+    padding: 14px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#btndrop {display: none;}
+
+#dropdown-menu {display: none;}
+/*Nav endblock*/
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.contact {
+    margin: 55px 20px 55px 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 16px 106px;
+}
+
+.contact-content h1 {
+    font-size: 35px;
+}
+
+.inputs {
+    width: 415px;
+    height: 60px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: none;
+    padding: 10px 15px;
+    border-bottom: 1px solid gray;
+    outline: none;
+}
+
+.textarea {
+    width: 415px;
+    height: 289px;
+    resize: none;
+    font-size: 15px;
+    padding: 10px 10px;
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+}
+
+#file1 {display: none;}
+
+.file {
+    width: 415px;
+    height: 60px;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 1px solid gray;
+    color: gray;
+    transition: 0.5s;
+}
+
+.file:hover {
+    background-color: rgba(169, 169, 169, 0.288);
+    transition: 0.5s;
+}
+
+.btn1 {
+    align-self: center;
+    padding: 15px 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.btn1:hover {
+    background-color: rgb(197, 194, 194);
+    transition: 0.5s;
+}
+
+
+
+
+/*Media Block*/
+
+@media (min-width: 1024px) {
+    .contact {
+        align-self: center;
+    }
+}
+
+
+@media (max-width: 655px) {
+    .contact-content h1 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 540px) {
+    .contact-content h1 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 522px) {
+    .nav a {
+        display: none;
+    }
+    #btndrop {display: block;}
+
+    .nav-dropdown {
+        padding: 14px 20px;
+        text-decoration: none;
+        color: white;
+    }
+    #dropdown-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 150px;
+        transition: 0.5s;
+        background-color: black;
+    }
+}
+
+@media (max-width: 492px) {
+    .inputs {
+        width: 350px;
+        height: 60px;
+    }
+    .file {
+        width: 350px;
+        height: 60px;
+    }
+    .textarea {
+        width: 350px;
+        height: 289px;
+    }
+    .contact-content h1 {
+        font-size: 15px;
+    }
+}
+@media (max-width: 426px) {
+    .inputs {
+        width: 300px;
+        height: 60px;
+    }
+    .file {
+        width: 300px;
+        height: 60px;
+    }
+    .textarea {
+        width: 300px;
+        height: 289px;
+    }
+    .contact-content h1 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 382px) {
+    .inputs {
+        width: 250px;
+        height: 60px;
+    }
+    .file {
+        width: 250px;
+        height: 60px;
+    }
+    .textarea {
+        width: 250px;
+        height: 289px;
+    }
+    .contact-content h1 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 382px) {
+    .inputs {
+        width: 200px;
+        height: 60px;
+    }
+    .file {
+        width: 200px;
+        height: 60px;
+    }
+    .textarea {
+        width: 200px;
+        height: 289px;
+    }
+    .contact-content h1 {
+        font-size: 15px;
+    }
+}
+
+/*Media endblock*/
