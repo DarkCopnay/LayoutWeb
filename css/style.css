@@ -218,8 +218,8 @@ body {
     align-items: center;
     justify-content: center;
     padding: 135px 0;
-    /* margin-left: 159px;
-    margin-right: 159px; */
+    margin-left: 159px;
+    margin-right: 159px;
 }
 
 .step-4-header {
@@ -477,7 +477,6 @@ body {
     }
     .step-4-header p {
         width: auto;
-        /* font-size: 24px; */
         margin: 0 20px;
     }
 
