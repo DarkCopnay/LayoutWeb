@@ -24,7 +24,7 @@
     </div>
     <div class="content">
         <div class="step-1" >
-            <img src="{% static "img/4e8829556bf942dd86c9.jpg" %}" width="560" height="560" alt="">
+            <img src="img/4e8829556bf942dd86c9.jpg" width="560" height="560" alt="">
             <div class="step-1-info">
                 <div class="info-1">
                     <div class="info-1-name" ><b>Адвокат <br> Олег Антонов</b></div>
@@ -96,20 +96,20 @@
             <div class="step-5-header"><p>Правовые новости и полезные материалы</p></div>
             <div class="step-5-content">
                 <div class="box-content">
-                    <img src="{% static "img/anasalshanti169265.jpg" %}" width="360" height="237" alt="">
+                    <img src="img/anasalshanti169265.jpg" width="360" height="237" alt="">
                     <h3>О защите персональных данных</h3>
                     <p>Парижская конвенция по охране промышленной собственности в 1883 года.</p>
                 </div>
                 <div class="step-5-content">
                     <div class="box-content">
-                        <img src="{% static "img/note.jpg" %}" width="360" height="237" alt="">
+                        <img src="img/note.jpg" width="360" height="237" alt="">
                         <h3>Интеллектуальная собственность</h3>
                         <p>Часто причисляют законы о недобросовестной конкуренции</p>
                     </div>
                 </div>
                 <div class="step-5-content">
                     <div class="box-content">
-                        <img src="{% static "img/home.jpg" %}" width="360" height="237" alt="">
+                        <img src="img/home.jpg" width="360" height="237" alt="">
                         <h3>О защите персональных данных</h3>
                         <p>Законодательством предусмотрены вычеты на сумму доходов.</p>
                     </div>
@@ -135,13 +135,16 @@
                     </div>
                 </div>
                 <form method="post" class="step-6-box">
-                    {% csrf_token %}
+                    <!-- {% csrf_token %} -->
                     <span class="error1"></span>
-                    {{ forms.name }} <br>
+                    <input type="text" class="inputs" placeholder="Введите свое имя">
+                    <!-- {{ forms.name }} <br> -->
                     <span class="error2"></span>
-                    {{ forms.email }} <br>
+                    <input type="email" class="inputs" placeholder="Введите свое почту">
+                    <!-- {{ forms.email }} <br> -->
                     <span class="error3"></span>
-                    {{ forms.number }} <br>
+                    <input type="text" class="inputs" placeholder="Введите свое номер телефона"> <br>
+                    <!-- {{ forms.number }} <br> -->
                     <button type="submit" id="submit">Записаться на консультацию</button>
                 </form>
             </div>
