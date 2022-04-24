@@ -36,7 +36,7 @@
                 </div>
             </div>
         </div>
-        <div class="step-2">
+        <!-- <div class="step-2">
             <div class="service">
                 <div class="service-name"><h1><b>Мои услуги</b></h1></div>
                 <div class="service-content">
@@ -135,22 +135,22 @@
                     </div>
                 </div>
                 <form method="post" class="step-6-box">
-                    <!-- {% csrf_token %} -->
+                    {% csrf_token %}
                     <span class="error1"></span>
                     <input type="text" class="inputs" placeholder="Введите свое имя">
-                    <!-- {{ forms.name }} <br> -->
+                    {{ forms.name }} <br>
                     <span class="error2"></span>
                     <input type="email" class="inputs" placeholder="Введите свое почту">
-                    <!-- {{ forms.email }} <br> -->
+                    {{ forms.email }} <br>
                     <span class="error3"></span>
                     <input type="text" class="inputs" placeholder="Введите свое номер телефона"> <br>
-                    <!-- {{ forms.number }} <br> -->
+                    {{ forms.number }} <br>
                     <button type="submit" id="submit">Записаться на консультацию</button>
                 </form>
             </div>
-        </div>
+        </div> -->
     </div>
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="footer-up">
             <a href="#">About</a>
             <a href="#">Features</a>
@@ -163,7 +163,7 @@
             <p>© All Rights Reserved. Acme Design Co.</p>
             <p>hello@mysite.com</p>
         </div>
-    </footer>
+    </footer> -->
     <script src="js/index.js"></script>
 </body>
 </html>
