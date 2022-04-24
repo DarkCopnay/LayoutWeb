@@ -7,6 +7,9 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: 'Roboto', sans-serif;
     background-color: white;
 }
@@ -86,6 +89,7 @@ body {
 .step-1 {
     display: flex;
     flex-direction: row;
+    align-self: center;
     margin-top: 50px;
 }
 
@@ -222,10 +226,7 @@ body {
     margin-right: 159px;
 }
 
-.step-4-header {
-    text-align: center;
-    padding: 0 0 90px;
-}
+.step-4-header {text-align: center;}
 
 .step-4-header h1 {
     font-size: 42px;
@@ -266,11 +267,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 135px 0 45px;
+    flex-flow: row wrap;
 }
 
 .step-5-header {
-    margin: 0 20px;
     font-weight: bold;
     font-size: 42px;
     height: 141px;
@@ -281,9 +281,12 @@ body {
 .step-5-content {
     display: flex;
     flex-direction: row;
+    flex-flow: row wrap;
 }
 
 .box-content img {
+    /* width: 300px;
+    height: 207px; */
     margin-right: 52px;
 }
 
@@ -299,6 +302,7 @@ body {
 }
 
 .btn {
+    align-self: center;
     padding: 60px 0 150px;
     margin-left: 159px;
     margin-right: 159px;
@@ -410,7 +414,6 @@ body {
 
 /*Media block*/
 @media  (max-width: 1025px) {
-    /*Media nav*/
     .topnav-content h3 {
         font-size: 15px;
     }
@@ -421,17 +424,27 @@ body {
         padding: 5px 10px;
         font-size: 15px;
     }
-    /*Media nav end*/
-    /*Media step-1*/
+
     .step-1 {flex-direction: column;}
     .step-1-info {
         margin-left: 0;
         margin-top: 10px;
     }
-    /*Media step-1 end*/
-    /*Media step-2*/
+
     .service-content {padding: 45px 50px 0;}
-    /*Media step-2 end*/
+
+    .step-5-header {
+        text-align: center;
+    }
+    
+    .step-5-content {
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .step-4-header p {
+        margin: 20px 0 20px; /*20px 300px*/
+    }
 }
 
 @media (max-width: 769px) {
@@ -470,18 +483,27 @@ body {
 
     .step-3-header p {
         width: auto;
+        align-self: flex-start;
     }
     
     .step-3-content {
         width: auto;
     }
+    .step-4 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     .step-4-header p {
         width: auto;
-        margin: 0 20px;
     }
 
     .cols h3 {
         width: auto;
+    }
+
+    .step-5-header {
+        font-size: 20px;
     }
 }
 @media (max-width: 426px) {
@@ -515,21 +537,32 @@ body {
         font-weight: bold;
     }
 
-    .step-4 {
-        margin-left: 0;
+    .box-content img {
         margin-right: 0;
     }
-}
-
-@media (max-width: 426px) {
-    .step-1 img {
-        width: 335px;
+    
+    .box-content h3 {
+        font-size: 20px;
     }
 
-    .step-1-info {
-        width: 335px;
-        height: 490px;
+    .step-5-content {
         align-self: center;
+        justify-self: center;
+    }
+    
+    .btn {margin: 0;}
+
+    .step-3-header h1 {
+        width: auto;
+    }
+
+    .step-3-header p {
+        width: auto;
+    }
+
+    .step-4 {
+        margin-left: 30px;
+        margin-right: 30px;
     }
 }
 
@@ -546,6 +579,30 @@ body {
 
     .step-2 button {
         padding: 16px 20px;
+    }
+
+    .step-4 {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .step-5 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .cols h3 {
+        width: auto;
+    }
+
+    .box-content img {
+        width: 300px;
+        height: 207px;
+    }
+
+    .box-content p {
+        font-size: 16px;
+        width: auto;
     }
 }
 /*Media endblock*/
