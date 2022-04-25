@@ -118,11 +118,11 @@
     <div class="btn">
         <button>Читать все статьи</button>
     </div>
-    <!-- <div class="step-6">
+    <div class="step-6">
         <div class="step-6-header"><h2>Контакты</h2></div>
         <div class="step-6-content">
             <div class="step-6-box">
-                <div style="font-size: 30px; padding: 0 0 40px;">
+                <div class='step-6-p' style="font-size: 30px; padding: 0 0 40px;">
                     <p>+456 344 267 15 24</p>
                     <p>antonovoleg@service.com</p>
                 </div>
@@ -134,21 +134,17 @@
                 </div>
             </div>
             <form method="post" class="step-6-box">
-                {% csrf_token %}
                 <span class="error1"></span>
-                <input type="text" class="inputs" placeholder="Введите свое имя">
-                {{ forms.name }} <br>
+                <input type="text" class="inputs" placeholder="Введите свое имя" style="margin-top: 20px;">
                 <span class="error2"></span>
                 <input type="email" class="inputs" placeholder="Введите свое почту">
-                {{ forms.email }} <br>
                 <span class="error3"></span>
                 <input type="text" class="inputs" placeholder="Введите свое номер телефона"> <br>
-                {{ forms.number }} <br>
                 <button type="submit" id="submit">Записаться на консультацию</button>
             </form>
         </div>
-    </div> -->
-    <!-- <footer class="footer">
+    </div>
+    <footer class="footer">
         <div class="footer-up">
             <a href="#">About</a>
             <a href="#">Features</a>
@@ -161,7 +157,7 @@
             <p>© All Rights Reserved. Acme Design Co.</p>
             <p>hello@mysite.com</p>
         </div>
-    </footer> -->
+    </footer>
     <script src="js/index.js"></script>
 </body>
 </html>
