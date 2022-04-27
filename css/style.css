@@ -578,10 +578,11 @@ body {
     .step-6-box {
         margin-left: 0;
         margin-right: 0;
+        width: auto;
     }
 
     .inputs {
-        width: 360px;
+        width: 350px;
         height: 60px;
     }
 
@@ -594,6 +595,12 @@ body {
         text-decoration: none;
     }
 }
+
+/* @media (max-width: 376px) {
+    .inputs {
+        width: 300px;
+    }
+} */
 
 @media (max-width: 320px) {
     .step-1 img {
@@ -636,7 +643,7 @@ body {
 
     .inputs {
         align-self: center;
-        width: 200px;
+        width: 235px;
         height: 60px;
     }
 
@@ -644,5 +651,7 @@ body {
         font-size: 20px; 
         width: auto;
     }
+
+    .step-6-box button {font-size: 12px;}
 }
 /*Media endblock*/
